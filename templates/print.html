@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link defer rel="stylesheet" type="text/css" media="screen" href="{% static 'css/print.css' %}">    
+    <script defer type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script defer src="{% static 'js/print.js' %}"></script>
+</head>
+<body>
+    <div class="top"></div>
+  <a class="link">
+      <img src="{% static 'img/print2SF.png' %}" alt="" class="print">
+      <img src="{% static 'img/printSF.png' %}" alt="" class="print2">
+    </a>
+    <div class="bot"></div>
+    <div class = "bye">
+        print("Bye world")
+    </div>
+</body>
+</html>

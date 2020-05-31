@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link defer rel="stylesheet" type="text/css" media="screen" href="{% static 'css/style.css' %}">    
+    <script defer type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script defer src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+    <p>
+        Este es el index
+    </p>
+    <p>
+        <a href="./print">
+         pagina del print
+        </a>
+    </p>
+    <p>
+        <a href="./sombras">
+            Pagina de sombras
+        </a>
+
+    </p>
+</body>
+</html>
