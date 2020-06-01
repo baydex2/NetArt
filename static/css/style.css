@@ -1,0 +1,41 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body, html {
+	font-family: 'Actor', sans-serif;
+	width: 100%;
+    height: 100%;
+    color: white;
+	overflow: hidden;
+}
+
+.consola{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+.contenido{
+    text-indent: 15px;
+}
+.print{
+    position: relative;
+    width: auto;
+    height: auto;
+    /* border-style: groove;
+    border-radius: 2px;
+    border-color: white; */
+}
+.sombras{
+    position: relative;
+    width: auto;
+    height: auto;
+    /* border-style: groove;
+    border-radius: 2px;
+    border-color: white; */
+}
