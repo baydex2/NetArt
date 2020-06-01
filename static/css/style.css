@@ -27,15 +27,23 @@ body, html {
     position: relative;
     width: auto;
     height: auto;
-    /* border-style: groove;
-    border-radius: 2px;
-    border-color: white; */
 }
 .sombras{
     position: relative;
     width: auto;
     height: auto;
-    /* border-style: groove;
-    border-radius: 2px;
-    border-color: white; */
+}
+.top{
+    border-style: groove;
+    border-width: 3px;
+    border-bottom-width: 0px;
+    border-radius: 5px;
+    border-color: gray;
+    background-color: gray;
+}
+.print:hover{
+    background-color: gray;
+}
+.sombras:hover{
+    background-color: gray;
 }
