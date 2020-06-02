@@ -21,7 +21,7 @@ window.onload = function(){
     var texto1 = 'Microsof Windows [Versión 10.0.18363.836]$'+                   
     '(c) 2019 Microsoft Corporation. Todos los derechos reservados.$'+
     '$'+                                                                 
-    'C:/Users/ale> Desliza tu dedo/mouse o da click en una opcion';
+    'C:/Users/ale> Desliza tu dedo/mouse por la pantalla o da click en una opcion';
     texto2 = "pagina del print";
     texto3 = "Pagina de sombras";
     insertar(1, texto1);
