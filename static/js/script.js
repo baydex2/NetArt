@@ -70,7 +70,7 @@ function seguir() {
     cuadro(parseInt(window.event.pageX), parseInt(window.event.pageY),10);
 }
 function handleMove(evt) {
-    cuadro(evt["changedTouches"][0]["pageX"],evt["changedTouches"][0]["pageY"],20);
+    cuadro(evt["changedTouches"][0]["pageX"],evt["changedTouches"][0]["pageY"],25);
     // console.log(evt["changedTouches"][0]["pageX"]+"--"+evt["changedTouches"][0]["pageY"]);
 }
 function cuadro(x,y,tamano){
