@@ -221,3 +221,37 @@ function formatNumber(num,dec,thou,pnt,curr1,curr2,n1,n2)
 		while (z > 3) {z-=3; y.splice(z,0,thou);}
 		var r = curr1+n1+y.join('')+n2+curr2;return r;
 }
+
+
+window.onclick = function(){
+    parpadeo();
+}
+function parpadeo(){
+    colorear("#t1",0,"white");
+    colorear("#t2",1000,"white");
+    colorear("#t3",2000,"white");
+    colorear("#t4",3000,"white");
+    colorear("#t1",6000,"black");
+    colorear("#t2",7000,"black");
+    colorear("#t3",8000,"black");
+    colorear("#t4",9000,"black");
+    window.setTimeout(
+        function(){
+            elemento(".luto").style.display = "block";
+        }
+        ,10000);
+}
+function colorear(etiqueta, tiempo, color){
+    window.setTimeout(
+        function(){
+            elemento(etiqueta).style.color = color;
+        },
+        tiempo
+    );
+}
+
+const bye = document.querySelector('.bye');
+bye.addEventListener("click",adios);
+function adios(){
+    window.location = "../";
+}

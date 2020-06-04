@@ -29,7 +29,7 @@ window.onload = function(){
     'C:/Users/ale> Desliza tu dedo/mouse por la pantalla o da click en una opcion';
     texto2 = "pagina del print";
     texto3 = "Pagina de sombras";
-    texto4 = "Pagina nueva(sin nombre aun)";
+    texto4 = "Pagina ab";
     insertar(1, texto1);
     window.setTimeout(insertar, delay*texto1.length ,2 ,texto2);
     window.setTimeout(insertar, delay*(texto1.length+texto2.length), 3, texto3);        
