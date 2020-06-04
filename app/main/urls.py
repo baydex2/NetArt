@@ -5,4 +5,5 @@ urlpatterns = [
     path('', views.home, name = 'home'), 
     path('print', views.print, name = 'print'), 
     path('sombras', views.sombras, name = 'sombras'), 
+    path('aborto', views.aborto, name = 'aborto'), 
 ]

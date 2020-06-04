@@ -2,8 +2,10 @@
 
 const print = document.querySelector(".print");
 const sombras = document.querySelector(".sombras");
+const aborto = document.querySelector(".aborto");
 print.addEventListener('click',Rprint);
 sombras.addEventListener('click',Rsombras);
+aborto.addEventListener('click',Raborto);
 constante = 15;
 
 
@@ -12,6 +14,9 @@ function Rprint(){
 }
 function Rsombras(){
     window.location = "./sombras";
+}
+function Raborto(){
+    window.location = "./aborto";
 }
 function elemento(nombre){
     return document.querySelector(nombre)
@@ -24,9 +29,11 @@ window.onload = function(){
     'C:/Users/ale> Desliza tu dedo/mouse por la pantalla o da click en una opcion';
     texto2 = "pagina del print";
     texto3 = "Pagina de sombras";
+    texto4 = "Pagina nueva(sin nombre aun)";
     insertar(1, texto1);
     window.setTimeout(insertar, delay*texto1.length ,2 ,texto2);
     window.setTimeout(insertar, delay*(texto1.length+texto2.length), 3, texto3);        
+    window.setTimeout(insertar, delay*(texto1.length+texto2.length+texto3.length), 4, texto4);        
 }
 function insertar(hijo, cadena){
     flag = 0

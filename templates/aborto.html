@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link defer rel="stylesheet" type="text/css" media="screen" href="{% static 'css/aborto.css' %}">    
+    <script defer type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+    <script defer src="{% static 'js/aborto.js' %}"></script>
+</head>
+<body onload="updateCounter();setInterval('updateCounter()',1000);">
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+
+</body>
+</html>
