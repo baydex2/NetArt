@@ -51,3 +51,19 @@ function adios(){
     window.location = "../";
 }
 
+window.onload = function(){
+    $("html, body").animate({
+        scrollTop: 800
+    }, 2000);
+    window.setTimeout(function(){
+        elemento(".me").style.display = "block";
+    },
+    2000);
+    window.setTimeout(function(){
+        elemento(".me").style.display = "none";
+    },
+    4000);
+}
+function elemento(nombre){
+    return document.querySelector(nombre)
+}
