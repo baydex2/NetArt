@@ -1,4 +1,6 @@
 var loaddate = new Date();
+var humanos = 7788980150;
+humanos = parseInt(humanos)
 function updateCounter() {
     //create jvascrpt date object
     var now = new Date();
@@ -185,12 +187,22 @@ sincePageLoad = formatNumber(sincePageLoad, 0, ',', ' ', '', '', '-', '');
     // document.getElementById("counter_l").firstChild.nodeValue = ABsSince73ofBlackbabies;
     
     // document.getElementById("counter_e").firstChild.nodeValue = totalABsWWsince1980;
+    // document.getElementById("counter_g").firstChild.nodeValue = sincePageLoad;
+    // document.getElementById("counter_h").firstChild.nodeValue = ABstodayWW1;
+    
+    
+
     elemento(".a").textContent = totalABsWWsince1980;
     elemento(".b").textContent = ABsWWthisYear;
     elemento(".c").textContent = sincePageLoad;
     elemento(".d").textContent = ABstodayWW1;
-    // document.getElementById("counter_g").firstChild.nodeValue = sincePageLoad;
-    // document.getElementById("counter_h").firstChild.nodeValue = ABstodayWW1;
+    lista = totalABsWWsince1980.split(",");
+    abortos = parseInt(((lista[0] * 1000000) + (lista[1] * 1000) + (lista[2] * 1) + (lista[3])));
+    total = humanos + abortos;
+    porcentajeHum = humanos * 100 / total;
+    porcentajeAbo = abortos * 100 / total;
+    // console.log(porcentajeHum);
+    elemento(".fondo").style.background = "linear-gradient(black "+porcentajeHum +"%, white)";
 }
 
 
