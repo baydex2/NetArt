@@ -20,36 +20,66 @@ function elemento(nombre){
 //     window.setTimeout(hola,5000)
 // }
 function proceso () {
-    recursivomen();
+    flag = Math.floor(Math.random() * (8 - 0)) + 0
+    transicion(flag);
 }
-function recursivomas(){
-    // flag = Math.floor(Math.random() * (8 - 0)) + 0
-    flag2 = 0
-    for(j = 7; j >= 0; j--){
-        window.setTimeout(limpiar,flag2,j);
-        flag2 += 100;
-        console.log(j);
-        if (j == 0) {
-            window.setTimeout(recursivomen,flag2+100)
-        }
+var fotograma = 0;
+var tiempo = 40;
+function transicion(f){
+    console.log(f);
+    if (f<=fotograma){
+        console.log("es menor");
+            flag2 = 0
+            for(j = fotograma; j >= f; j--){
+                window.setTimeout(limpiar,flag2,j);
+                flag2 += tiempo;
+                if (j == f) {
+                    window.setTimeout(transicion,flag2+tiempo, Math.floor(Math.random() * (8 - 0)) + 0)
+                }
+            }
+    }
+    else{
+            console.log("es mayor");
+            flag2 = 0
+            for(j = fotograma; j <= f; j++){
+                window.setTimeout(limpiar,flag2,j);
+                flag2 += tiempo;
+                if(j == f){
+                    window.setTimeout(transicion,flag2+tiempo, Math.floor(Math.random() * (8 - 0)) + 0)
+                }
+            }
     }
 }
-function recursivomen(){
-    flag2 = 0
-    for(j = 0; j <= 7; j++){
-        window.setTimeout(limpiar,flag2,j);
-        flag2 += 100;
-        console.log(j);
-        if(j == 7){
-            window.setTimeout(recursivomas,flag2+100)
-        }
-    }
-}
+// function recursivomas(){
+//     // flag = Math.floor(Math.random() * (8 - 0)) + 0
+//     flag2 = 0
+//     for(j = 7; j >= 0; j--){
+//         window.setTimeout(limpiar,flag2,j);
+//         flag2 += 100;
+//         console.log(j);
+//         if (j == 0) {
+//             window.setTimeout(recursivomen,flag2+100)
+//         }
+//     }
+// }
+// function recursivomen(){
+//     // flag = Math.floor(Math.random() * (8 - 0)) + 0
+//     flag2 = 0
+//     for(j = 0; j <= 7; j++){
+//         window.setTimeout(limpiar,flag2,j);
+//         flag2 += 100;
+//         console.log(j);
+//         if(j == 7){
+//             window.setTimeout(recursivomas,flag2+100)
+//         }
+//     }
+// }
 function limpiar(numero){
     for(var i = 0; i < 8; i++){
         if (numero != i){
             document.querySelector("#a"+i).style.display = "none";
         }else{
+            fotograma = i;
             document.querySelector("#a"+i).style.display = "block";
             
         }
