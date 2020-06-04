@@ -33,9 +33,9 @@
     position: absolute;
     bottom: 0;
     left: 45%;
-    width: 8%;
+    width: 5%;
     display: none;
-    height: 10%;
+    height: auto;
 }
 .luto img{
     position: relative;
